@@ -23,7 +23,7 @@ typedef pair<int, int> pii;
 
 template<typename T>
 bool cmp(const T &a, const T &b) {
-    return a.first > b.first;
+    return a.first < b.first;
 }
 
 int main() {
@@ -59,15 +59,18 @@ int main() {
         for (int j = 0; j < Q; ++j) {
             cin >> num;
 
-            auto  low_b = lower_bound(v_low.begin(), v_low.end(), make_pair(num, ""), cmp<pair<int, string>>) ;
-            for (auto k = low_b; k!= v_low.end() ; ++k){
+            auto low_b = upper_bound(v_low.begin(), v_low.end(), make_pair(num, ""), cmp<pair<int, string>>);
+            for (auto k = v_low.begin(); k < low_b; ++k) {
                 vl.push_back(k->second);
             }
 
-            auto up_b = upper_bound(v_high.begin(), v_high.end(), make_pair(num, ""), cmp<pair<int, string>>);
-            for (auto k = v_high.begin(); k < up_b ; ++k){
+            auto up_b = lower_bound(v_high.begin(), v_high.end(), make_pair(num, ""), cmp<pair<int, string>>);
+            for (auto k = up_b; k < v_high.end(); ++k) {
                 vh.push_back(k->second);
             }
+
+            sort(vl.begin(), vl.end());
+            sort(vh.begin(), vh.end());
 
             std::set_intersection(vl.begin(), vl.end(),
                                   vh.begin(), vh.end(),
@@ -83,5 +86,6 @@ int main() {
 
 
     }
+
     return 0;
 }
