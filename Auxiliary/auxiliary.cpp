@@ -27,19 +27,28 @@ int main() {
     return 0;
 }
 
-// Reads n input test cases efficiently
-
-int n;
+// Reads n input test cases
 
 cin >> n;
 while (n--) {}
 
-// Reads numbers until EOF
+// Reads n and k ints until EOF
 
-int n;
-while (cin >> n) {}
+while (cin >> n >> k) {}
 
-// Reads lines until EOF
+// Generate all subsets of {1,...,n}
 
-string line;
-while(getline(cin, line)) {}
+for (i = 0; i < (1 << n); i++) {
+    // i represents a subset
+    for (int j = 0; j < n; j++) if (i & (1 << j)) {
+        ...
+        // j represents an element in i
+    }
+}
+
+// Generate all permutations
+
+int n = 8, p[8] = {0, 1, 2, 3, 4, 5, 6, 7};
+do {
+    ...
+} while (next_permutation(p, p + n));
