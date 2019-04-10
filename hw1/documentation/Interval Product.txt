@@ -1,0 +1,10 @@
+Email : avishaya@campus.technion.ac.il
+Name : Avishay Avisror
+
+implemented 2 sorted arrays that includes in any time the indexes of zeros/negatives accordingly.
+Then, when a "p" request appears, the sub_vector of the range [a~b] is calculated.
+if there are zeros between, then anyway the result will be 0 (0*any is 0)
+else, count number of negatives and print "+" or "-" accordingly.
+complexity :
+each C request is O(1).
+each q resuest is O(n) worst case (if the range is maximum and all numbers are negatives)

@@ -1,0 +1,16 @@
+Email : avishaya@campus.technion.ac.il
+Name : Avishay Avisror
+
+implemented 2 arrays of "willing" and "actual", which were maintained during the process.
+then, as long as price > 0 do :
+1. calc price_per_ppl (the ideal amount assuming everyboddy has enough many)
+2. make priority heap sorted by (first-left from what is willing to give, second-index)
+3. then, pop each element from the heap, assign it as much money as can, but no more than price_per_ppl
+4. upadte all fields accordingly and return to stage 1.
+trigger for IMPOSSIBLE : in the end of the process, price is still more than 0.
+
+Complexity :
+assuming price is a constant. n is number of paricipants.
+- make heap O(n)
+- heap manipulations O(nlogn)
+total O(nlogn)

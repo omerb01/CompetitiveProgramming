@@ -1,0 +1,3 @@
+C:/Users/avish/Desktop/Technion/Competitive Programming/hw1/cmake-build-debug/CMakeFiles/no1.dir
+C:/Users/avish/Desktop/Technion/Competitive Programming/hw1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/avish/Desktop/Technion/Competitive Programming/hw1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,12 @@
+Email : avishaya@campus.technion.ac.il
+Name : Avishay Avisror
+
+implemented using back-tracking. recursive Algorithm as described :
+1. if we are after the last column - legal solution. print it.
+2. if queen is already set, call recursive with next column
+3. otherwise :
+	3.1 for each row, try to set a queen if and only if it is legal
+	3.2 mark partial solution
+	3.3 call recursive with column+1
+	3.4 unmark last queen
+	** in this methos, we are checking all the relevant options, and skipping illegal options.

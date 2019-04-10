@@ -1,0 +1,14 @@
+Email : avishaya@campus.technion.ac.il
+Name : Avishay Avisror
+
+Implemented a struct with 3 integers : query_id, first and time,
+and a comparing algorithm according to the description.
+then, using priority queue, do x times :
+- pop the best option (usually with minimum time) and print it
+- update time (time=time+first)
+- push it back
+Complexity :
+n - number of queries, assuming number of iterations is const
+make_heap - O(n)
+const times O(logn) - pop and push elements from the heap
+total : O(n)
