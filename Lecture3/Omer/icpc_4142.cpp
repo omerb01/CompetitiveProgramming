@@ -40,16 +40,19 @@ int main() {
             int greater_num = it_l - lows.begin();
             int smaller_num = highs.end() - it_h;
 
-            if (smaller_num == 1)  {
-                cout << dict[it_h->second] << endl;
-            } else if (greater_num == 1) {
-                cout << dict[(--it_l)->second] << endl;
-            } else {
+            if (smaller_num == 0 || greater_num == 0 || (smaller_num > 1 && greater_num > 1)) {
                 cout << "UNDETERMINED" << endl;
+                continue;
+            }
+
+            if (greater_num == 1) {
+                cout << dict[(--it_l)->second] << endl;
+            } else if (smaller_num == 1) {
+                cout << dict[it_h->second] << endl;
             }
         }
 
-        cout << endl;
+        if (t != 0) cout << endl;
     }
 
     return 0;
