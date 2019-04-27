@@ -45,11 +45,28 @@ int main() {
                 continue;
             }
 
+            bool check = false;
             if (greater_num == 1) {
-                cout << dict[(--it_l)->second] << endl;
+                int curr_index = (--it_l)->second;
+                for (auto j = it_h; j != highs.end(); j++) {
+                    if (j->second == curr_index) {
+                        cout << dict[curr_index] << endl;
+                        check = true;
+                        break;
+                    }
+                }
             } else if (smaller_num == 1) {
-                cout << dict[it_h->second] << endl;
+                int curr_index = it_h->second;
+                for (auto j = lows.begin(); j != it_l; j++) {
+                    if (j->second == curr_index) {
+                        cout << dict[curr_index] << endl;
+                        check = true;
+                        break;
+                    }
+                }
             }
+
+            if(!check) cout << "UNDETERMINED" << endl;
         }
 
         if (t != 0) cout << endl;
