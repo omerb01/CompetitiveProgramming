@@ -27,10 +27,20 @@ int main() {
     return 0;
 }
 
+// minimal header
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    return 0;
+}
+
 // Reads n input test cases
 
-cin >> n;
-while (n--) {}
+cin >> t;
+while (t--) {}
 
 // Reads n and k ints until EOF
 
@@ -52,3 +62,17 @@ int n = 8, p[8] = {0, 1, 2, 3, 4, 5, 6, 7};
 do {
     ...
 } while (next_permutation(p, p + n));
+
+// Usefull binary search
+
+template<class Iter, class T>
+Iter binary_find(Iter begin, Iter end, T val)
+{
+    // Finds the lower bound in at most log(last - first) + 1 comparisons
+    Iter i = std::lower_bound(begin, end, val);
+
+    if (i != end && !(val < *i))
+        return i; // found
+    else
+        return end; // not found
+}
