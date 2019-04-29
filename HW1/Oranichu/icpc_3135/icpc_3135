@@ -1,0 +1,11 @@
+Email : oran.n@campus.technion.ac.il
+Full name : Oran Nahoum
+
+Description:
+Map keeps it's elements sorted so i will make sure to give the map a type that it's first element will hold the next query.
+Map elemnts will be consisted of <<a,b>,c> when b is the querty ID number, c is the original input Period and a is like a stacking sum of periods.
+by adding periods we can tell what is the next query to be printed, because map keeps it's elements sorted we just need to pop the first element then put a new element back where a = a + c (the next wait time).
+And do that for K times.
+Time Complexity -
+inserting to map - O(nlogn)
+Total - O(nlogn)
