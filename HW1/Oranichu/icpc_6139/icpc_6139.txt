@@ -1,0 +1,18 @@
+Email : oran.n@campus.technion.ac.il
+Full name : Oran Nahoum
+
+Description:
+Iv'e kept 3 types of vectors:
+1. Original values vector.
+2. A vector that contains all the indexes if Zeros. (sorted)
+3. A vector that contains all the indexes if Negative values. (sorted)
+
+With every change i check according to it's previous value compared to it's new value and accordingly update the vectors in O(logn) using lower_bound function.
+When we get a P and need to print result i first check if there's a zero in the range given, if not then i check if the number of negative values in that given range is even or odd and print + or - accordingly.
+
+Time complexity for each case -
+building vectors - O(n)
+changing values - O(logn)
+printing after P command - O(logn)
+Total - O(n) for receiving input and O(logn) for printing result.
+

@@ -1,0 +1,11 @@
+Email : oran.n@campus.technion.ac.il
+Full name : Oran Nahoum
+
+Description :
+The 8 Queens Chess Problem on a 8x8 board has only 92 solutions,
+So the most simple solution is to save all possible solutions to the problem in an array and do a search in the 92 array elements (each element is an output line that contains 8 indexes),
+And search for all the solutions where the given queen is placed and print them with the desired output format.
+Time complecity for each test case -
+
+Filling the array - O(1) board is 8x8.
+Checking the array - O(1) only 92 options.

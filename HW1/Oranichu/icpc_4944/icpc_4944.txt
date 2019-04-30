@@ -1,0 +1,18 @@
+Email : oran.n@campus.technion.ac.il
+Full name : Oran Nahoum
+
+Description:
+I've made a vector which each element is a tuple of three (in c++ it's a pair that the first element is a pair)
+<<limit, index>, paid_for>
+the first thing in the vector is the initial limit that the buyer has, second one is the index in the original order, and the third is how much he paid for.
+I sort the vector (O(nlogn)) so that the min limit is first and if two limits are the same the one that was last in the original order will be first
+so if for example the limits were a-10 b-10 c-4 d-4 after sort we will have d-4 c-4 10-b 10-a that way a will have to pay more than b if needed.
+i start by trying to divided the price fairly between everyone, if the first one on the list is capable of paying that amount than great if not we will put as much as possible to him, and continue to chec the next one with the new price,
+and so on and so on until we paid the full price, than we print every thing by order by finding the index value.
+At the beggning i check to see if total limits is smaller than price, if so print IMPOSSIBLE.
+Time : for each one of the K cases where n is number of participents
+init vector - O(n)
+sorting - O(nlogn)
+printing - O(n^2)
+
+total (n^2)
