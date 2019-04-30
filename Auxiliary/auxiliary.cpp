@@ -76,3 +76,10 @@ Iter binary_find(Iter begin, Iter end, T val)
     else
         return end; // not found
 }
+
+// GCD
+
+int gcd(int a, int b) {
+    if (b == 0) return a;
+    else return gcd(b, a % b);
+}
