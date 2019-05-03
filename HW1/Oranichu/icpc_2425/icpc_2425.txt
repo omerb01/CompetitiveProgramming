@@ -1,0 +1,15 @@
+Email : oran.n@campus.technion.ac.il
+Full name : Oran Nahoum
+
+Description:
+Instead of building the graph like it's inputed and calculating the shortest path each time,
+Iv'e build the reversed graph and calculated all the shortest paths from exit using Dijkstra as given in the aux material.
+
+Then just run and see which graph node distance from exit is smaller than the given time.
+
+Time : for each one of the test cases cases(let's assume there are K test cases) where N is number of nodes and E is number of edges.
+init graph - O(N+E)
+Dijkstra - O(N+ElogN)
+cheking time - O(N)
+
+total (K* (N+ElogN))
