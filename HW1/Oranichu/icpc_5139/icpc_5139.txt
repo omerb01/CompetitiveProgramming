@@ -1,0 +1,12 @@
+Email : oran.n@campus.technion.ac.il
+Full name : Oran Nahoum
+
+Description:
+The program goes through the words and checks which letter determent the difference in the order, which is the first letter that's different in the first word(l1) from the letter in the same place in the second word(l2).
+Then we insert them into a node in a directional graph and the edges is from l1 to l2 that means if we'll do a topological sort, that l1 will come before l2 which makes sense because l1 is before l2 in the lexicon.
+Input is legit, lexicographic order has no loops, so no loops in the graph we build.
+Time Complexity -
+comparing two words - O(1) (each string is at most 20 c)
+going through all words - O(n) (where n is the number of words)
+sorting graph - O(V+E) = O(1) (V = 26) and E is the max number of edges which is 25+24+23+...+0 = 325. (max num of edges with no loops).
+Total - O(n).
