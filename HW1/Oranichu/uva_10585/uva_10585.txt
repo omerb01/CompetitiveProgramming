@@ -1,0 +1,13 @@
+Email : oran.n@campus.technion.ac.il
+Full name : Oran Nahoum
+
+Description:
+After we take all the points, we will sort them (by their x value, and y next which is the default sort of a pair) and calc the mid point between first point and last point, second and n-1 and so on and so on ...
+If all mid points are the same then we have a center of symmetry.
+
+Time :
+Receiving all points - O(n)
+Sorting - O(nlogn)
+Calculation - O(n)
+
+Total : O(nlogn)
