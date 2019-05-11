@@ -1,0 +1,28 @@
+Email : oran.n@campus.technion.ac.il
+Full name : Oran Nahoum
+
+Description:
+
+If we write down all first 100 binary numbers in rows we can see a rule that happends :
+example with 10 first :
+    2^3 --- 2^2 --- 2^1 --- 2^0
+     0       0       0       0
+     0       0       0       1
+     0       0       1       0
+     0       0       1       1
+     0       1       0       0
+     0       1       0       1
+     0       1       1       0
+     0       1       1       1
+     1       0       0       0
+     1       0       0       1
+as you can see here there are seq of one 1's in the 2^0 (=1) col
+and a seq of two 1's in the 2^1 (=2) col and so on ...
+if we take 8 for example we can know there's 3*(2^2) one's before it.
+we just need to calc the number of one's till the current number from the closest power of 2 to it
+by repeating this recursively, but depending on the number of one's it has in it.
+
+Time :
+
+
+Total :
