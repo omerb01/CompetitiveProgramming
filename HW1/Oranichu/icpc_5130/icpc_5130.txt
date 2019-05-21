@@ -1,0 +1,13 @@
+Email : oran.n@campus.technion.ac.il
+Full name : Oran Nahoum
+
+Description:
+We can see that all six hieroglyphs have a diff amount of "holes" in them so inorder to recognize which is what,
+First we mark the background (go over the frame and DFS while were still on a 0) and mark everything as -1,
+Then we are left we just black parts (marked as 1) and we mark each hieroglyphs with a unique number,
+Thirdly we scan the grid again and go over the left 0's (which are the holes) and connect each hole with each hieroglyphs by their unique number.
+
+Time : for each test of the n test cases :
+4 full grid scans - O(200*200) = O(1)
+(init, background marking, hieroglyphs marking, holes marking)
+Total : O(n).
