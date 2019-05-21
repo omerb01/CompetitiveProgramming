@@ -22,7 +22,7 @@ if we take 8 for example we can know there's 3*(2^2) one's before it.
 we just need to calc the number of one's till the current number from the closest power of 2 to it
 by repeating this recursively, but depending on the number of one's it has in it.
 
-Time :
+Total time: for each of the k test cases :
+count ones of a and b - log(a) + log(b) = log(b)
 
-
-Total :
+Total : k * log(b)
