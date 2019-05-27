@@ -1,0 +1,21 @@
+Emails :
+oran.n@campus.technion.ac.il
+avishaya@campus.technion.ac.il
+omer.be@campus.technion.ac.il
+
+Full names :
+Oran Nahoum
+Avishay Avisror
+Omer Belhasin
+
+Description:
+To find if on of the phone numbers is another phone number substring (starting from the beginning)
+we simply need to receive all phone numbers into a vector, sort the vector which will make all substring (that start from the beginning)
+be placed next to each other where the small string will be before longer ones (lexicographic order)
+then simply check if one string is substring of the one after it by using find function of string.
+
+Time Complexity : for each text case where n is the number of phone numbers
+sorting - o(nlogn)
+finding substring - (each string is length 10 max) - O(1)
+going through all sorted array - O(n)
+Total - O(nlogn)
