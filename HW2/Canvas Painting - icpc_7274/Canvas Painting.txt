@@ -1,0 +1,19 @@
+Emails :
+oran.n@campus.technion.ac.il
+avishaya@campus.technion.ac.il
+omer.be@campus.technion.ac.il
+
+Full names :
+Oran Nahoum
+Avishay Avisror
+Omer Belhasin
+
+Description:
+We can convert this question to, what is the best partition in each phase so that the total sum of each partition(by the size value) is min and we can only dived into two partition in each phase.
+(And repeatedly add every partition sum)
+So we need to start from the bottom(smallest partition), find the smallest sum of two canvases and combine them together, find the next two canvases and so on.
+The reason we need to combine them together is because we keep on adding that partition when we go from top to bottom (from the fully array of canvases all the way down to just two canvases).
+
+Time Complexity : for each text case where n is the number of phone numbers
+Inserting to a sorted multimap - O(nlogn).
+Calculating sums and adding them - O(2n) = O(n).
