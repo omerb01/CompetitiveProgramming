@@ -1,0 +1,23 @@
+Emails :
+oran.n@campus.technion.ac.il
+avishaya@campus.technion.ac.il
+omer.be@campus.technion.ac.il
+
+Full names :
+Oran Nahoum
+Avishay Avisror
+Omer Belhasin
+
+Description:
+נגדיר: f(d,c) - ההסתברות של זוג במרחק d שעלותו c
+אז הפתרון נתון על ידי sum(f(d,i) כאשר סוכמים את כל ההסתברויות מ- 1 עד m (העלות המקסימלית שהם יכולים לבזבז)
+נוכל לחשב את הפונקציה באמצעות תכנון דינאמי כאשר כל צעד מוגדר לפי סכום כל העלויות האפשריות של המרחק הקודם או 0 אם המרחק גדול מהעלות
+את המרחקים בין הצמתים מוצאים בעזרת פלויד
+
+Time Complexity :
+insert_input - o(n)
+insert_input - o(n)
+FloydWarshall - o(n^3)
+calc_dp - o(n^2*r^2)
+calc prob - o(m)
+סה״כ סיבוכיות o(m + n^3 + n^2*r^2)
