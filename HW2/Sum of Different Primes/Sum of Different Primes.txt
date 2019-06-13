@@ -1,0 +1,19 @@
+Emails :
+oran.n@campus.technion.ac.il
+avishaya@campus.technion.ac.il
+omer.be@campus.technion.ac.il
+
+Full names :
+Oran Nahoum
+Avishay Avisror
+Omer Belhasin
+
+Description:
+האלגוריתם משתמש בזיכרון על מנת לחשב את האפשרויות השונות לסכום k מספרים ראשוניים ל- n
+הלוגיקה היא לעבור על כל המספרים הראשוניים האפשריים בסכימה (עד 1120)
+לאחר מכן לבדוק עבור כל מספר ראשוני את מספרי האפשרויות של כל המספרים בהפרש עם המספר הראשוני מהסוף להתחלה
+בדרך זו, אנו מקבלים חלחול של הפתרון קדימה באופן יעיל
+
+Time Complexity :
+sieve - o(nlog(log(n)))
+fill_mem - o(n^2k)
