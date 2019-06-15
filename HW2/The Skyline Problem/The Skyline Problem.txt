@@ -1,0 +1,18 @@
+Emails :
+oran.n@campus.technion.ac.il
+avishaya@campus.technion.ac.il
+omer.be@campus.technion.ac.il
+
+Full names :
+Oran Nahoum
+Avishay Avisror
+Omer Belhasin
+
+Description:
+האלגוריתם קולט כל בנין כקטעים במרחב הדו ממדי
+לאחר מכן עובר על כל הקורדינטות האפשריות מ- 0 עד 10000 ובודק עבור כל קורדינטה מה הגובה המקסימלי מבין הקטעים שמכילים אותה
+מחזירים סדרה לפי הגבהים השונים שהתקבלו
+
+Time Complexity :
+find_max_height - o(n)
+algorithm - o(n^2)
