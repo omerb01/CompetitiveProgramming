@@ -1,0 +1,22 @@
+Email :
+oran.n@campus.technion.ac.il
+avishaya@campus.technion.ac.il
+omer.be@campus.technion.ac.il
+
+Full names :
+Oran Nahoum
+Avishay Avisror
+Omer Belhasin
+
+Description:
+Given a dictionary, using a comparator (as defined : 1.length, 2.lex, 3.index) sort the dictionary.
+then, for each test case :
+	- get substring.
+	- iterate the sorted dictionary, and find 10 strings which has the following substring.
+	- found 1 or more -> print its indexes. else -> print -1.
+
+Time Complexity :
+Given - n length of dictionary, m number of testcases.
+sorting the dictionary is n*logn.
+iterating for each test case is worst case O(n). so for all of them is O(mn)
+then, total is O(mn + nlogn).

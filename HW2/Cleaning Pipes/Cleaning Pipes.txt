@@ -1,0 +1,25 @@
+Email :
+oran.n@campus.technion.ac.il
+avishaya@campus.technion.ac.il
+omer.be@campus.technion.ac.il
+
+Full names :
+Oran Nahoum
+Avishay Avisror
+Omer Belhasin
+
+Description:
+Implemented using reduction to the following graph :
+- Vertexes : canals
+- Edges : {(u,v) | there is a collision between canal u and canal v}
+Algorithm :
+1. iterate any pair of canals and check collision (which  is not a well). for any collision apply a mathcing edge in the graph.
+2. find out if the graph and BiPartite* and answer accordingly
+** BiPartite is דו-צדדי. we can implement it by DFS or BFS. any way to iterate the edges and check seperation to 2 groups of vertexes should be fine.
+(I've implemented both but for some reason only the dfs is working for me... so I've documented out bfs)
+
+Time Complexity :
+Given - n number of canals
+- iterate pairs (brute force) - O(n^2)
+- DFS the graph - O(V+E) while v=n, e=O(n^2). so DFSing the graph should be O(n^2+n)
+Total : O(n^2)

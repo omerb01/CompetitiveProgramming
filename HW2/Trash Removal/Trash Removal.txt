@@ -1,0 +1,22 @@
+Email :
+oran.n@campus.technion.ac.il
+avishaya@campus.technion.ac.il
+omer.be@campus.technion.ac.il
+
+Full names :
+Oran Nahoum
+Avishay Avisror
+Omer Belhasin
+
+Description:
+Given a polygon, implement shamo's algorithm to find the minimum width of the polygon ("will the sofa pass the door?")
+using :
+- convex hull algorithm to sort the points of the polygon
+- find antipodal pair
+- iterate all the antipodal pairs and output the min width
+
+Time Complexity :
+Given n - number of points in the polygon.
+convex hull is O(n^2)
+iterating the antipodal points is O(n) as we saw in class
+then total is O(n^2)
